@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BlogController!{% endblock %}
+
+{% block body %}
+<section class="articles">
+{% for article in articles %}
+<article>
+    <h2>Titre de l'article</h2>
+    <div class="metadata">Ecrit le 27/10/2022 à 15:21 dans la classe politique</div>
+    <div class="content">
+        <img src="https://image.shutterstock.com/image-photo/kiev-ukraine-may-30-2016-260nw-428643526.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate perspiciatis repellat fugit eum distinctio!</p>
+        <p>Delectus aperiam assumenda quas aspernatur. Quos rerum odio, possimus consequatur totam nemo voluptatum itaque ex!</p>
+        <a href="{{ path('blog_show') }}" class="btn-primary">Lire la suite</a>
+    </div>
+</article>
+{% endfor %}
+
+</section>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{# <style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Salut {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ 'C:/Users/baoce/Desktop/Monblog/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/Users/baoce/Desktop/Monblog/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
+    </ul>
+</div> #}
